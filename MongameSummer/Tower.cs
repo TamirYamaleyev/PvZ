@@ -1,11 +1,17 @@
 ﻿using Microsoft.Xna.Framework;
 using MongameSummer;
+using System;
+using System.Linq;
 
 public class Tower : Animation
 {
-    protected float defaultScale = 0.25f;
     public Collider collider;
-    public int health = 100;
+    protected int health = 100;
+
+    protected float shootCooldown = 1f;
+    protected float shootTimer = 0f;
+
+    protected float rangeInPixels = 1000f;
 
     public Tile Tile { get; set; }
 
@@ -13,7 +19,7 @@ public class Tower : Animation
     {
         Play(true, 12);
 
-        scale = new Vector2(defaultScale, defaultScale);
+        scale = new Vector2(0.25f, 0.25f);
 
         collider = SceneManager.Create<Collider>();
         collider.isTrigger = false;
@@ -21,10 +27,12 @@ public class Tower : Animation
 
     public override void Update(GameTime gameTime)
     {
-        base.Update(gameTime);
+        shootTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
 
         // Keeps collider in sync
         collider.DestRectangle = DestRectangle;
+
+        base.Update(gameTime);
     }
 
     public virtual void TakeDamage(int amount)
@@ -32,5 +40,34 @@ public class Tower : Animation
         health -= amount;
         if (health <= 0)
             SceneManager.Remove(this);
+    }
+
+    protected virtual bool EnemyInRange()
+    {
+        var towerCenterX = position.X + DestRectangle.Width * 0.5f;
+
+       var updatables = SceneManager.Instance.GetAllUpdatables();
+
+        foreach (var obj in updatables)
+        {
+            if (obj is not Enemy enemy)
+                continue;
+
+            if (enemy.Lane != Tile.Row)
+                continue;
+
+            float enemyCenterX = enemy.position.X + enemy.DestRectangle.Width * 0.5f;
+            float distance = enemyCenterX - towerCenterX;
+
+            if (distance > 0 && distance <= rangeInPixels)
+                return true;
+        }
+
+        return false;
+    }
+
+    protected virtual void Shoot()
+    {
+        // Overriden per tower type
     }
 }

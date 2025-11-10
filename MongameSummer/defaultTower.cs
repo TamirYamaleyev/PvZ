@@ -11,14 +11,29 @@ namespace MongameSummer
     {
         public defaultTower() : base("defaultTower")
         {
-            Play(true, 12);
+            shootCooldown = 1.2f;
         }
 
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
 
-            // Shooting logic
+            if (shootTimer >= shootCooldown)
+            {
+                if (EnemyInRange())
+                {
+                    Shoot();
+                    shootTimer = 0f;
+                }
+            }
+        }
+
+        protected override void Shoot()
+        {
+            Vector2 spawnPos = new Vector2(DestRectangle.Right, DestRectangle.Center.Y);
+
+            var bullet = new Bullet("bull", spawnPos, Vector2.UnitX);
+            SceneManager.Add(bullet);
         }
     }
 }

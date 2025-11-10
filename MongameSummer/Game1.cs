@@ -54,6 +54,7 @@ public class Game1 : Game
         //SpriteManager.AddSprite("player", "Images/pacman");
         SpriteManager.AddSprite("pixel", "Images/pixel");
         SpriteManager.AddSprite("defaultTower", "Images/pacman");
+        SpriteManager.AddSprite("bull", "Images/pacman");
         SpriteManager.AddSprite("zombie", "Images/Birds/Bird3_Egret4", 4, 4);
 
         

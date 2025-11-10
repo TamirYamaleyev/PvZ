@@ -7,8 +7,6 @@ public class Enemy : Animation
 {
     public Collider collider;
 
-    public float defaultScale = 0.1f;
-
     public float speed = 50f;
     public int health = 100;
     public int attackPower = 10;
@@ -21,7 +19,7 @@ public class Enemy : Animation
     public Enemy() : base("zombie")
     {
         Play(true, 12);
-        scale = new Vector2(defaultScale, defaultScale);
+        scale = new Vector2(0.1f, 0.1f);
 
         collider = SceneManager.Create<Collider>();
         collider.isTrigger = true;

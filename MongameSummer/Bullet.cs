@@ -5,8 +5,6 @@ namespace MongameSummer
 {
     internal class Bullet : Animation
     {
-        protected float defaultScale = 0.3f;
-
         public Collider collider;
         public int damage = 25;
         public float speed = 500f;
@@ -15,7 +13,7 @@ namespace MongameSummer
         public Bullet(string spriteName, Vector2 startPos, Vector2 direction) : base(spriteName)
         {
             Play(true, 12);
-            scale = new Vector2(defaultScale, defaultScale);
+            scale = new Vector2(0.1f, 0.1f);
 
             this.position = startPos;
             this.direction = direction;
