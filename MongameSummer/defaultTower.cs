@@ -17,15 +17,6 @@ namespace MongameSummer
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
-
-            if (shootTimer >= shootCooldown)
-            {
-                if (EnemyInRange())
-                {
-                    Shoot();
-                    shootTimer = 0f;
-                }
-            }
         }
 
         protected override void Shoot()

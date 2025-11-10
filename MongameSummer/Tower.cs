@@ -6,11 +6,10 @@ using System.Linq;
 public class Tower : Animation
 {
     public Collider collider;
-    protected int health = 100;
 
+    protected int health = 100;
     protected float shootCooldown = 1f;
     protected float shootTimer = 0f;
-
     protected float rangeInPixels = 1000f;
 
     public Tile Tile { get; set; }
@@ -27,12 +26,19 @@ public class Tower : Animation
 
     public override void Update(GameTime gameTime)
     {
-        shootTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+        float delta = (float)gameTime.ElapsedGameTime.TotalSeconds;
+        shootTimer += delta;
 
         // Keeps collider in sync
         collider.DestRectangle = DestRectangle;
 
         base.Update(gameTime);
+
+        if (shootTimer >= shootCooldown && EnemyInRange())
+        {
+            Shoot();
+            shootTimer = 0f;
+        }
     }
 
     public virtual void TakeDamage(int amount)
