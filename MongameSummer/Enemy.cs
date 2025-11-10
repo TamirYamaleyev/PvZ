@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 
 namespace MongameSummer;
 
@@ -60,7 +61,9 @@ public class Enemy : Animation
 
     private void CheckCollisions(float delta)
     {
-        foreach (var updatable in SceneManager.Instance.GetAllUpdatables())
+        var updatablesCopy = new List<IUpdateable>(SceneManager.Instance.GetAllUpdatables());
+
+        foreach (var updatable in updatablesCopy)
         {
             if (updatable is Tower tower && collider.Intersect(tower.collider))
             {
