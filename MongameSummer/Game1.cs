@@ -13,14 +13,17 @@ public class Game1 : Game
     private SpriteManager _spriteManager;
     private static List<IDrawable> _drawables = new List<IDrawable>();
     private static List<IUpdateable> _updateables= new List<IUpdateable>();
+
+    public static int ScreenWidth = 1920;
+    public static int ScreenHeight = 1080;
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
         _graphics.IsFullScreen = true;
-        _graphics.PreferredBackBufferWidth = 1920;
-        _graphics.PreferredBackBufferHeight = 1080;
+        _graphics.PreferredBackBufferWidth = ScreenWidth;
+        _graphics.PreferredBackBufferHeight = ScreenHeight;
     }
 
     protected override void Initialize()

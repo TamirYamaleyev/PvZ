@@ -65,4 +65,9 @@ public class SceneManager : IDrawable
             DrawVar.Draw(spriteBatch);
         }
     }
+
+    public IEnumerable<IUpdateable> GetAllUpdatables()
+    {
+        return updatables;
+    }
 }

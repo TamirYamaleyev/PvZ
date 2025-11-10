@@ -6,13 +6,19 @@ public class Enemy : Animation
 {
     public Collider collider;
 
+    public float defaultScale = 0.25f;
+
     public float speed = 50f;
     public int health = 100;
+    public int attackPower = 10;
+
+    private float attackCooldown = 1f;
+    private float attackTimer = 0f;
 
     public Enemy() : base("zombie")
     {
         Play(true, 12);
-        scale = new Vector2(0.25f, 0.25f);
+        scale = new Vector2(defaultScale, defaultScale);
 
         collider = SceneManager.Create<Collider>();
         collider.isTrigger = true;
@@ -21,14 +27,28 @@ public class Enemy : Animation
     public override void Update(GameTime gameTime)
     {
         float delta = (float)gameTime.ElapsedGameTime.TotalSeconds;
-        position.X -= speed * delta;
+
+        MoveEnemy(delta);
 
         collider.DestRectangle = DestRectangle;
 
+        attackTimer += delta;
+
+        CheckCollisions(delta);
+
         base.Update(gameTime);
 
-        if (position.X < 0)
-            SceneManager.Remove(this);        
+        // Remove if off screen
+        if (position.X + DestRectangle.Width < 0 || position.X > Game1.ScreenWidth ||
+            position.Y + DestRectangle.Height < 0 || position.Y > Game1.ScreenHeight)
+        {
+            SceneManager.Remove(this);
+        }
+    }
+
+    private void MoveEnemy(float delta)
+    {
+        position.X -= speed * delta;
     }
 
     public void TakeDamage(int amount)
@@ -36,5 +56,39 @@ public class Enemy : Animation
         health -= amount;
         if (health <= 0)
             SceneManager.Remove(this);
+    }
+
+    private void CheckCollisions(float delta)
+    {
+        foreach (var updatable in SceneManager.Instance.GetAllUpdatables())
+        {
+            if (updatable is Tower tower && collider.Intersect(tower.collider))
+            {
+                HandleCollisionWithTower(tower, delta);
+            }
+
+            if (updatable is Bullet bullet && collider.Intersect(bullet.collider))
+            {
+                HandleCollisionWithBullet(bullet);
+            }
+        }
+    }
+
+    private void HandleCollisionWithTower(Tower tower, float delta)
+    {
+        position.X += speed * delta; // Pushback to prevent overlap
+
+        if (attackTimer >= attackCooldown)
+        {
+            tower.TakeDamage(attackPower);
+            attackTimer = 0f;
+            // Add animations
+        }
+    }
+
+    private void HandleCollisionWithBullet(Bullet bullet)
+    {
+        TakeDamage(bullet.damage);
+        SceneManager.Remove(bullet);
     }
 }
