@@ -7,9 +7,9 @@ public class Tile
 
     public Rectangle Bounds { get; }
 
-    public Tower Occupant { get; private set; }
+    public Tower PlacedTower { get; private set; }
 
-    public bool IsEmpty => Occupant == null;
+    public bool IsEmpty => PlacedTower == null;
 
     public Tile(int row, int col, Rectangle bounds)
     {
@@ -20,11 +20,11 @@ public class Tile
 
     public void PlaceTower(Tower tower)
     {
-        Occupant = tower;
+        PlacedTower = tower;
     }
 
     public void RemoveTower()
     {
-        Occupant = null;
+        PlacedTower = null;
     }
 }

@@ -41,25 +41,37 @@ public class GridScene : IDrawable
     public void Update(GameTime gameTime)
     {
         var mouse = Mouse.GetState();
+        Vector2 mousePos = new Vector2(mouse.X, mouse.Y);
 
-        // Only act when left mouse button is pressed
         if (mouse.LeftButton == ButtonState.Pressed)
         {
-            Vector2 mousePos = new Vector2(mouse.X, mouse.Y);
+            OnLMB(mousePos);
+        }
 
-            // Find the tile under the mouse
-            if (grid.TryGetTileAt(mousePos, out Tile tile) && tile.IsEmpty)
-            {
-                // Create a tower and register it with SceneManager
-                var tower = SceneManager.Create<defaultTower>(); // your Animation tower class
-                tower.position = tile.Bounds.Center.ToVector2();  // center it on the tile
-
-                // Mark the tile as occupied
-                tile.PlaceTower(tower);
-            }
+        if (mouse.RightButton == ButtonState.Pressed)
+        {
+            OnRMB(mousePos);
         }
     }
 
+    private void OnLMB(Vector2 mousePos)
+    {
+        if (grid.TryGetTileAt(mousePos, out Tile tile) && tile.IsEmpty)
+        {
+            var tower = SceneManager.Create<defaultTower>();
+            tower.position = tile.Bounds.Center.ToVector2();
+            tile.PlaceTower(tower);
+        }
+    }
+
+    private void OnRMB(Vector2 mousePos)
+    {
+        if (grid.TryGetTileAt(mousePos, out Tile tile) && !tile.IsEmpty)
+        {
+            SceneManager.Remove(tile.PlacedTower);
+            tile.RemoveTower();
+        }
+    }
 
     public void Draw(SpriteBatch spriteBatch)
     {
