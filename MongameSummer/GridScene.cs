@@ -10,6 +10,8 @@ public class GridScene : IDrawable
 {
     private EnemySpawner spawner;
 
+    private TowerSelectionBar selectionBar;
+
     int cellBorderThickness = 1;
     Color borderColor = Color.SlateGray;
 
@@ -32,6 +34,9 @@ public class GridScene : IDrawable
             tileHeight: gTileHeight,
             start: new Vector2(gLeftMargin, Game1.ScreenCenterHeight - (gRows * gTileHeight) * 0.5f)
         );
+
+        selectionBar = new TowerSelectionBar(new List<string> { "defaultTower", "defaultTower", "defaultTower" });
+        SceneManager.Add(selectionBar);
 
         spawner = new EnemySpawner(grid);
         SceneManager.Add(spawner);
@@ -57,9 +62,16 @@ public class GridScene : IDrawable
     {
         if (grid.TryGetTileAt(mousePos, out Tile tile) && tile.IsEmpty)
         {
-            var tower = SceneManager.Create<defaultTower>();
-            tower.position = tile.Bounds.Center.ToVector2();
-            tile.PlaceTower(tower);
+            if (!string.IsNullOrEmpty(selectionBar.SelectedTower))
+            {
+                var tower = TowerFactory.CreateTower(selectionBar.SelectedTower);
+                if (tower != null)
+                {
+                    tower.position = tile.Bounds.Center.ToVector2();
+                    tile.PlaceTower(tower);
+                    SceneManager.Add(tower);
+                }
+            }
         }
     }
 
