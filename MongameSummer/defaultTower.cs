@@ -11,7 +11,7 @@ namespace MongameSummer
     {
         public defaultTower() : base("defaultTower")
         {
-            shootCooldown = 1.2f;
+            shootCooldown = 2f;
         }
 
         public override void Update(GameTime gameTime)

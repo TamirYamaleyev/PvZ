@@ -16,6 +16,9 @@ public class Game1 : Game
 
     public static int ScreenWidth = 1920;
     public static int ScreenHeight = 1080;
+
+    public static Player player;
+
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
@@ -29,6 +32,7 @@ public class Game1 : Game
     protected override void Initialize()
     {
         // TODO: Add your initialization logic here
+        player = new Player(500);
 
         ScreenCenterWidth = GraphicsDevice.Viewport.Width * 0.5f;
         ScreenCenterHeight = GraphicsDevice.Viewport.Height * 0.5f;
@@ -36,9 +40,6 @@ public class Game1 : Game
         base.Initialize();
     }
 
-    private Player pacman;
-    private Enemy enemy;
-    
     private SpriteFont oswaldFont;
     
     public static float ScreenCenterWidth;
