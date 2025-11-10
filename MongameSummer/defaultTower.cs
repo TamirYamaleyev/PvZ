@@ -24,6 +24,7 @@ namespace MongameSummer
             Vector2 spawnPos = new Vector2(DestRectangle.Right, DestRectangle.Center.Y);
 
             var bullet = new Bullet("bull", spawnPos, Vector2.UnitX);
+            bullet.damage = bulletDamage;
             SceneManager.Add(bullet);
         }
     }

@@ -16,15 +16,25 @@ namespace MongameSummer
         Color defaultColor = Color.Gray;
         Color selectedColor = Color.Yellow;
 
-        float paddingPercentage = 0.1f;
+        float cellPaddingPercentage = 0.1f;
 
         public string SelectedTower { get; private set; }
         private int selectedIndex = -1;
+
+        public int topPadding = 8;
+        public int backgroundPadding = 10;
+        public Color BackgroundColor { get; set; } = new Color(139, 69, 19); // Brown
 
         public TowerSelectionBar(List<string> towerNames)
         {
             this.towerNames = towerNames;
             slots = new List<Rectangle>();
+
+            int totalWidth = towerNames.Count * slotSize + (towerNames.Count - 1) * spacing;
+
+            float startX = Game1.ScreenCenterWidth - totalWidth * 0.5f;
+
+            startPos = new Vector2(startX, backgroundPadding + topPadding);
 
             for (int i = 0; i < towerNames.Count; i++)
             {
@@ -57,6 +67,8 @@ namespace MongameSummer
 
         public void Draw(SpriteBatch spriteBatch)
         {
+            DrawBackground(spriteBatch);
+
             for (int i = 0; i < slots.Count; i++)
             {
                 DrawSlotBackground(spriteBatch, i);
@@ -77,8 +89,8 @@ namespace MongameSummer
             var slotRect = slots[index];
             var sprite = SpriteManager.GetSprite(towerNames[index]);
 
-            int paddingX = (int)(slotRect.Width * paddingPercentage);
-            int paddingY = (int)(slotRect.Height * paddingPercentage);
+            int paddingX = (int)(slotRect.Width * cellPaddingPercentage);
+            int paddingY = (int)(slotRect.Height * cellPaddingPercentage);
 
             Rectangle dest = new Rectangle(
             slotRect.X + paddingX,
@@ -90,5 +102,19 @@ namespace MongameSummer
             spriteBatch.Draw(sprite.texture, dest, Color.White);
         }
 
+        private void DrawBackground(SpriteBatch spriteBatch)
+        {
+            int totalWidth = slots.Count * slotSize + (slots.Count - 1) * spacing;
+            int totalHeight = slotSize;
+
+            Rectangle backgroundRect = new Rectangle(
+                (int)startPos.X - backgroundPadding,
+                (int)startPos.Y - backgroundPadding,
+                totalWidth + backgroundPadding * 2,
+                totalHeight + backgroundPadding * 2
+            );
+
+            spriteBatch.Draw(SpriteManager.GetSprite("pixel").texture, backgroundRect, BackgroundColor);
+        }
     }
 }

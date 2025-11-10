@@ -8,6 +8,7 @@ public class Tower : Animation
     public Collider collider;
 
     protected int health = 100;
+    protected int bulletDamage = 25;
     protected float shootCooldown = 1f;
     protected float shootTimer = 0f;
     protected float rangeInPixels = 1000f;
