@@ -15,13 +15,12 @@ namespace MongameSummer
         int laneCount = 5;
 
         private float spawnTimer = 0f;
-        private float spawnIntervalSeconds;
+        private float spawnIntervalSeconds = 2f;
         private Random random = new Random();
 
-        public EnemySpawner(TowerGrid grid, float interval = 3)
+        public EnemySpawner(TowerGrid grid)
         {
             this.grid = grid;
-            spawnIntervalSeconds = interval;
         }
 
         public void Update(GameTime gameTime)

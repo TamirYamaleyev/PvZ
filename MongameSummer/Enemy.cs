@@ -7,7 +7,7 @@ public class Enemy : Animation
 {
     public Collider collider;
 
-    public float defaultScale = 0.25f;
+    public float defaultScale = 0.1f;
 
     public float speed = 50f;
     public int health = 100;

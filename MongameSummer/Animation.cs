@@ -12,6 +12,10 @@ public class Animation : Sprite
     public Animation(string spriteName) : base(spriteName)
     {
         Reset();
+
+        sourceRectangle = _spritesheet[0, 0];
+
+        _origin = new Vector2(sourceRectangle.Value.Width * 0.5f, sourceRectangle.Value.Height * 0.5f);
     }
 
     public void Play(bool IsLooping = true, int fps = 60)
@@ -19,6 +23,11 @@ public class Animation : Sprite
         isAnimating = true;
         this.fps = fps;
         this.isLooping = IsLooping;
+
+        x = 0;
+        y = 0;
+        sourceRectangle = _spritesheet[x, y];
+        frameCounter = 0;
     }
 
     public void Pause()
@@ -41,6 +50,8 @@ public class Animation : Sprite
         isAnimating = false;
         x = 0;
         y = 0;
+        sourceRectangle = _spritesheet[x, y];
+        frameCounter = 0;
     }
 
     bool CanMoveNextFrame(GameTime gameTime)
@@ -75,6 +86,7 @@ public class Animation : Sprite
 
         sourceRectangle = _spritesheet[x, y];
 
+        _origin = new Vector2(sourceRectangle.Value.Width * 0.5f, sourceRectangle.Value.Height * 0.5f);
     }
 
     public override void Update(GameTime gameTime)

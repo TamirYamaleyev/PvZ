@@ -9,7 +9,6 @@ using IDrawable = MongameSummer.IDrawable;
 public class GridScene : IDrawable
 {
     private EnemySpawner spawner;
-    private float spawnInterval = 5f;
 
     int cellBorderThickness = 1;
     Color borderColor = Color.SlateGray;
@@ -34,7 +33,7 @@ public class GridScene : IDrawable
             start: new Vector2(gLeftMargin, Game1.ScreenCenterHeight - (gRows * gTileHeight) * 0.5f)
         );
 
-        spawner = new EnemySpawner(grid, spawnInterval);
+        spawner = new EnemySpawner(grid);
         SceneManager.Add(spawner);
     }
 

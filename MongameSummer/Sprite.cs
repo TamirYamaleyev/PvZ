@@ -46,7 +46,7 @@ public class Sprite : IDrawable
 
     public virtual void Update(GameTime gameTime)
     {
-        DestRectangle = GetDestRectangle(_texture.Bounds);
+        DestRectangle = GetDestRectangle(sourceRectangle ?? _texture.Bounds);
     }
     
     public virtual void Draw(SpriteBatch _spriteBatch)
