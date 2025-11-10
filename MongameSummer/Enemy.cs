@@ -16,6 +16,8 @@ public class Enemy : Animation
     private float attackCooldown = 1f;
     private float attackTimer = 0f;
 
+    public int Lane;
+
     public Enemy() : base("zombie")
     {
         Play(true, 12);
@@ -65,9 +67,12 @@ public class Enemy : Animation
 
         foreach (var updatable in updatablesCopy)
         {
-            if (updatable is Tower tower && collider.Intersect(tower.collider))
+            if (updatable is Tower tower && tower.Tile.Row == Lane)
             {
-                HandleCollisionWithTower(tower, delta);
+                if (collider.Intersect(tower.collider))
+                {
+                    HandleCollisionWithTower(tower, delta);
+                }
             }
 
             if (updatable is Bullet bullet && collider.Intersect(bullet.collider))

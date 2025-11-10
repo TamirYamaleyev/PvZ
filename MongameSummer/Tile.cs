@@ -21,10 +21,13 @@ public class Tile
     public void PlaceTower(Tower tower)
     {
         PlacedTower = tower;
+        tower.Tile = this;
     }
 
     public void RemoveTower()
     {
+        if (PlacedTower != null)
+            PlacedTower.Tile = null;
         PlacedTower = null;
     }
 }

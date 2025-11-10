@@ -38,13 +38,13 @@ namespace MongameSummer
 
         private void SpawnEnemy()
         {
+            int lane = random.Next(0, laneCount);
+
             var enemy = SceneManager.Create<Enemy>();
+            enemy.Lane = lane;
 
             // Adjust Y to lock onto a lane(Row)
-            enemy.position = new Vector2(Game1.ScreenCenterWidth + xSpawnOffset, Game1.ScreenCenterHeight);
-
-            int lane = random.Next(0, laneCount);
-            enemy.position.Y = grid[lane, 0].Bounds.Center.Y;
+            enemy.position = new Vector2(Game1.ScreenCenterWidth + xSpawnOffset, grid[lane, 0].Bounds.Center.Y);
         }
     }
 }

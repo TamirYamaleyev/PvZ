@@ -7,6 +7,8 @@ public class Tower : Animation
     public Collider collider;
     public int health = 100;
 
+    public Tile Tile { get; set; }
+
     public Tower(string spriteName) : base(spriteName)
     {
         Play(true, 12);
