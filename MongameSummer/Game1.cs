@@ -45,30 +45,32 @@ public class Game1 : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
         _spriteManager = new SpriteManager(Content);
+
+        var gridScene = SceneManager.Create<GridScene>();
         
-        SpriteManager.AddSprite("player", "Images/pacman");
+        //SpriteManager.AddSprite("player", "Images/pacman");
         SpriteManager.AddSprite("pixel", "Images/pixel");
 
         
-        SpriteManager.AddSprite("egret", "Images/Birds/Bird3_Egret4", 4, 4);
-        SpriteManager.AddSprite("duck", "Images/Birds/Bird2 Duck_1", 4, 4);
+        //SpriteManager.AddSprite("egret", "Images/Birds/Bird3_Egret4", 4, 4);
+        //SpriteManager.AddSprite("duck", "Images/Birds/Bird2 Duck_1", 4, 4);
 
-        pacman = SceneManager.Create<Player>();
-        pacman.Play();
+        //pacman = SceneManager.Create<Player>();
+        //pacman.Play();
         
-        enemy = SceneManager.Create<Enemy>();
-        enemy.Play();
+        //enemy = SceneManager.Create<Enemy>();
+        //enemy.Play();
         
-        enemy.position = new Vector2(Game1.ScreenCenterWidth + 300, Game1.ScreenCenterHeight + 300);
-        enemy.scale = new Vector2(0.2f, 0.2f);
+        //enemy.position = new Vector2(Game1.ScreenCenterWidth + 300, Game1.ScreenCenterHeight + 300);
+        //enemy.scale = new Vector2(0.2f, 0.2f);
        
-        enemy.LinkWithPlayer(pacman);
+        //enemy.LinkWithPlayer(pacman);
         
         Content.Load<Texture2D>("Images/logo");
         Content.Load<Texture2D>("Images/pong-atlas");
 
-        pacman.position = new Vector2(Game1.ScreenCenterWidth, Game1.ScreenCenterHeight);
-        pacman.scale = new Vector2(0.2f, 0.2f);
+        //pacman.position = new Vector2(Game1.ScreenCenterWidth, Game1.ScreenCenterHeight);
+        //pacman.scale = new Vector2(0.2f, 0.2f);
         
         oswaldFont = Content.Load<SpriteFont>("Fonts/Oswald");
         
@@ -101,18 +103,18 @@ public class Game1 : Game
         SceneManager.Instance.Draw(_spriteBatch);
         
 
-        string text = "Hello Monogame!";
-        _spriteBatch.DrawString(
-            oswaldFont,
-            text,
-            new Vector2(ScreenCenterWidth, 50.0f),
-            Color.White,
-            MathHelper.ToRadians(0.0f),
-            new Vector2(oswaldFont.MeasureString(text).X * 0.5f, oswaldFont.MeasureString(text).Y * 0.5f),
-            1.0f,
-            SpriteEffects.None,
-            0
-            );
+        //string text = "Hello Monogame!";
+        //_spriteBatch.DrawString(
+        //    oswaldFont,
+        //    text,
+        //    new Vector2(ScreenCenterWidth, 50.0f),
+        //    Color.White,
+        //    MathHelper.ToRadians(0.0f),
+        //    new Vector2(oswaldFont.MeasureString(text).X * 0.5f, oswaldFont.MeasureString(text).Y * 0.5f),
+        //    1.0f,
+        //    SpriteEffects.None,
+        //    0
+        //    );
         
         _spriteBatch.End();
         base.Draw(gameTime);
