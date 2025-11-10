@@ -5,32 +5,36 @@ namespace MongameSummer;
 public class Enemy : Animation
 {
     public Collider collider;
-    private Player player;
-    public Enemy() : base("duck")
+
+    public float speed = 50f;
+    public int health = 100;
+
+    public Enemy() : base("zombie")
     {
+        Play(true, 12);
+        scale = new Vector2(0.25f, 0.25f);
+
         collider = SceneManager.Create<Collider>();
         collider.isTrigger = true;
     }
 
-
-    public void LinkWithPlayer(Player player)
-    {
-        this.player = player;
-
-        if (collider.isTrigger)
-            collider.OnTrigger += player.OnTrigger;
-        else
-            collider.OnCollision += player.OnCollision;
-    }
-
     public override void Update(GameTime gameTime)
     {
-        base.Update(gameTime);
-        
+        float delta = (float)gameTime.ElapsedGameTime.TotalSeconds;
+        position.X -= speed * delta;
+
         collider.DestRectangle = DestRectangle;
 
-        if (collider.Intersect(player.collider))
-            collider.Notify(this);
-        
+        base.Update(gameTime);
+
+        if (position.X < 0)
+            SceneManager.Remove(this);        
+    }
+
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
+        if (health <= 0)
+            SceneManager.Remove(this);
     }
 }

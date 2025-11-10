@@ -8,6 +8,9 @@ using IDrawable = MongameSummer.IDrawable;
 
 public class GridScene : IDrawable
 {
+    private EnemySpawner spawner;
+    private float spawnInterval = 5f;
+
     int cellBorderThickness = 1;
     Color borderColor = Color.SlateGray;
 
@@ -30,26 +33,33 @@ public class GridScene : IDrawable
             tileHeight: gTileHeight,
             start: new Vector2(gLeftMargin, Game1.ScreenCenterHeight - (gRows * gTileHeight) * 0.5f)
         );
+
+        spawner = new EnemySpawner(grid, spawnInterval);
+        SceneManager.Add(spawner);
     }
 
     public void Update(GameTime gameTime)
     {
         var mouse = Mouse.GetState();
 
+        // Only act when left mouse button is pressed
         if (mouse.LeftButton == ButtonState.Pressed)
         {
-            Vector2 pos = new Vector2(mouse.X, mouse.Y);
+            Vector2 mousePos = new Vector2(mouse.X, mouse.Y);
 
-            if (grid.TryGetTileAt(pos, out Tile tile) && tile.IsEmpty)
+            // Find the tile under the mouse
+            if (grid.TryGetTileAt(mousePos, out Tile tile) && tile.IsEmpty)
             {
-                var tower = SceneManager.Create<defaultTower>();
-                tower.position = tile.Bounds.Center.ToVector2();
-                tower.scale = new Vector2(0.5f, 0.5f);
+                // Create a tower and register it with SceneManager
+                var tower = SceneManager.Create<defaultTower>(); // your Animation tower class
+                tower.position = tile.Bounds.Center.ToVector2();  // center it on the tile
 
+                // Mark the tile as occupied
                 tile.PlaceTower(tower);
             }
         }
     }
+
 
     public void Draw(SpriteBatch spriteBatch)
     {

@@ -9,9 +9,10 @@ namespace MongameSummer
 {
     internal class defaultTower : Tower
     {
-        public defaultTower() : base("default tower")
+        public defaultTower() : base("defaultTower")
         {
             Play(true, 12);
+            scale = new Vector2(0.25f, 0.25f);
         }
 
         public override void Update(GameTime gameTime)
