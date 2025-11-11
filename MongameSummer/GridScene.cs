@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Microsoft.VisualBasic;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MongameSummer;
@@ -8,6 +9,9 @@ using IDrawable = MongameSummer.IDrawable;
 
 public class GridScene : IDrawable
 {
+    private float goldGenInterval = 8f;
+    private int goldPerInterval = 25;
+
     private EnemySpawner spawner;
 
     private TowerSelectionBar selectionBar;
@@ -40,9 +44,12 @@ public class GridScene : IDrawable
 
         spawner = new EnemySpawner(grid);
         SceneManager.Add(spawner);
-    }
 
-    public void Update(GameTime gameTime)
+        var goldGen = new GoldGenerator(Game1.player, goldGenInterval, goldPerInterval);
+        SceneManager.Add(goldGen);
+}
+
+public void Update(GameTime gameTime)
     {
         var mouse = Mouse.GetState();
         Vector2 mousePos = new Vector2(mouse.X, mouse.Y);
