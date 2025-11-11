@@ -14,6 +14,8 @@ public class Enemy : Animation
     private float attackCooldown = 1f;
     private float attackTimer = 0f;
 
+    public int GoldOnDeath { get; set; } = 10;
+
     public int Lane;
 
     public Enemy() : base("zombie")
@@ -56,7 +58,16 @@ public class Enemy : Animation
     {
         health -= amount;
         if (health <= 0)
-            SceneManager.Remove(this);
+        {
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        Game1.player.AddGold(GoldOnDeath);
+
+        SceneManager.Remove(this);
     }
 
     private void CheckCollisions(float delta)

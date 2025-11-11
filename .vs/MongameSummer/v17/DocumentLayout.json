@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Wraith\\source\\repos\\PvZ\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\gridscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\gridscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -58,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +70,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\Enemy.cs",
+              "RelativeDocumentMoniker": "MongameSummer\\Enemy.cs",
+              "ToolTip": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\Enemy.cs",
+              "RelativeToolTip": "MongameSummer\\Enemy.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T01:17:37.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GoldGenerator.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\GoldGenerator.cs",
               "RelativeDocumentMoniker": "MongameSummer\\GoldGenerator.cs",
@@ -79,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "TowerFactory.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\TowerFactory.cs",
               "RelativeDocumentMoniker": "MongameSummer\\TowerFactory.cs",
@@ -92,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\Player.cs",
               "RelativeDocumentMoniker": "MongameSummer\\Player.cs",
@@ -105,20 +122,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GridScene.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\GridScene.cs",
               "RelativeDocumentMoniker": "MongameSummer\\GridScene.cs",
               "ToolTip": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\GridScene.cs",
               "RelativeToolTip": "MongameSummer\\GridScene.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwC8AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwDAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T15:35:25.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "TowerSelectionBar.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\TowerSelectionBar.cs",
               "RelativeDocumentMoniker": "MongameSummer\\TowerSelectionBar.cs",
@@ -131,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Sprite.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\Sprite.cs",
               "RelativeDocumentMoniker": "MongameSummer\\Sprite.cs",
@@ -144,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "SceneManager.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\SceneManager.cs",
               "RelativeDocumentMoniker": "MongameSummer\\SceneManager.cs",
@@ -157,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Tower.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\Tower.cs",
               "RelativeDocumentMoniker": "MongameSummer\\Tower.cs",
@@ -170,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "defaultTower.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\defaultTower.cs",
               "RelativeDocumentMoniker": "MongameSummer\\defaultTower.cs",
@@ -183,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "TowerGrid.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\TowerGrid.cs",
               "RelativeDocumentMoniker": "MongameSummer\\TowerGrid.cs",
@@ -196,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\Game1.cs",
               "RelativeDocumentMoniker": "MongameSummer\\Game1.cs",
@@ -209,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "EnemySpawner.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\EnemySpawner.cs",
               "RelativeDocumentMoniker": "MongameSummer\\EnemySpawner.cs",
