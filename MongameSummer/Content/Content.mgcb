@@ -13,12 +13,17 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin Fonts/Oswald.spritefont
-/importer:FontDescriptionImporter
-/processor:FontDescriptionProcessor
-/processorParam:PremultiplyAlpha=True
-/processorParam:TextureFormat=Compressed
-/build:Fonts/Oswald.spritefont
+#begin Audio/ArrowHit.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/ArrowHit.wav
+
+#begin Audio/EnemyDeath.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/EnemyDeath.wav
 
 #begin Fonts/Oswald.spritefont
 /importer:FontDescriptionImporter

@@ -5,6 +5,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
 namespace MongameSummer;
+
+using Microsoft.Xna.Framework.Audio;
 using System.Collections.Generic;
 public class Game1 : Game
 {
@@ -47,6 +49,9 @@ public class Game1 : Game
     
     public static float ScreenCenterWidth;
     public static float ScreenCenterHeight;
+
+    public static SoundEffect EnemyDeathSound;
+    public static SoundEffect ArrowHitSound;
     
     protected override void LoadContent()
     {
@@ -68,6 +73,9 @@ public class Game1 : Game
         SpriteManager.AddSprite("houndEnemy", "Images/Enemies/Hound", 6, 1);
 
         oswaldFont = Content.Load<SpriteFont>("Fonts/Oswald");
+
+        EnemyDeathSound = Content.Load<SoundEffect>("Audio/EnemyDeath");
+        ArrowHitSound = Content.Load<SoundEffect>("Audio/ArrowHit");
 
 
         var gridScene = SceneManager.Create<GridScene>();

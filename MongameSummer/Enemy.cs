@@ -69,6 +69,8 @@ public class Enemy : Animation
     {
         Game1.player.AddGold(GoldOnDeath);
 
+        Game1.EnemyDeathSound.Play();
+
         SceneManager.Remove(this);
     }
 
@@ -108,6 +110,7 @@ public class Enemy : Animation
     private void HandleCollisionWithBullet(Bullet bullet)
     {
         TakeDamage(bullet.damage);
+        Game1.ArrowHitSound.Play();
         SceneManager.Remove(bullet);
     }
 }
