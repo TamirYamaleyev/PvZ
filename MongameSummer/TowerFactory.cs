@@ -13,7 +13,7 @@ namespace MongameSummer
             return (towerType) switch
             {
                 "defaultTower" => new defaultTower(),
-                //"fastTower" => new defaultTower(),
+                "goldTower" => new GoldRigTower(),
                 //"sniperTower" => new defaultTower(),
                 _ => null
             };

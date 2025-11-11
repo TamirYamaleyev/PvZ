@@ -39,7 +39,7 @@ public class GridScene : IDrawable
             start: new Vector2(gLeftMargin, Game1.ScreenCenterHeight - (gRows * gTileHeight) * 0.5f)
         );
 
-        selectionBar = new TowerSelectionBar(new List<string> { "defaultTower", "defaultTower", "defaultTower" }, Game1.oswaldFont);
+        selectionBar = new TowerSelectionBar(new List<string> { "goldTower", "defaultTower", "defaultTower" }, Game1.oswaldFont);
         SceneManager.Add(selectionBar);
 
         spawner = new EnemySpawner(grid);

@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Wraith\\source\\repos\\PvZ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\defaulttower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\defaulttower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\gridscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\gridscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\goldgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\goldgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\towerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\towerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\defaulttower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\defaulttower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\towerselectionbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\towerselectionbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\goldrigtower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\goldrigtower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\goldgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\goldgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,16 +43,8 @@
       "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\tower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\towerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\towerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\towergrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\towergrid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\towerselectionbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|solutionrelative:mongamesummer\\towerselectionbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7C634B2B-0A3E-4D34-9526-182AE392A633}|MongameSummer\\MongameSummer.csproj|c:\\users\\wraith\\source\\repos\\pvz\\mongamesummer\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,20 +74,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "GoldRigTower.cs",
+              "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\GoldRigTower.cs",
+              "RelativeDocumentMoniker": "MongameSummer\\GoldRigTower.cs",
+              "ToolTip": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\GoldRigTower.cs",
+              "RelativeToolTip": "MongameSummer\\GoldRigTower.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T01:20:44.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\Enemy.cs",
               "RelativeDocumentMoniker": "MongameSummer\\Enemy.cs",
               "ToolTip": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\Enemy.cs",
               "RelativeToolTip": "MongameSummer\\Enemy.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwEQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwDoAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T01:17:37.273Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "GoldGenerator.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\GoldGenerator.cs",
               "RelativeDocumentMoniker": "MongameSummer\\GoldGenerator.cs",
@@ -96,20 +113,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "TowerFactory.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\TowerFactory.cs",
               "RelativeDocumentMoniker": "MongameSummer\\TowerFactory.cs",
               "ToolTip": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\TowerFactory.cs",
               "RelativeToolTip": "MongameSummer\\TowerFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-11T00:59:04.806Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\Player.cs",
               "RelativeDocumentMoniker": "MongameSummer\\Player.cs",
@@ -128,27 +145,14 @@
               "RelativeDocumentMoniker": "MongameSummer\\GridScene.cs",
               "ToolTip": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\GridScene.cs",
               "RelativeToolTip": "MongameSummer\\GridScene.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwDAAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwCUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T15:35:25.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TowerSelectionBar.cs",
-              "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\TowerSelectionBar.cs",
-              "RelativeDocumentMoniker": "MongameSummer\\TowerSelectionBar.cs",
-              "ToolTip": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\TowerSelectionBar.cs",
-              "RelativeToolTip": "MongameSummer\\TowerSelectionBar.cs",
-              "ViewState": "AgIAANgAAAAAAAAAAAAcwPkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T21:24:39.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Sprite.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\Sprite.cs",
               "RelativeDocumentMoniker": "MongameSummer\\Sprite.cs",
@@ -161,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "SceneManager.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\SceneManager.cs",
               "RelativeDocumentMoniker": "MongameSummer\\SceneManager.cs",
@@ -174,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Tower.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\Tower.cs",
               "RelativeDocumentMoniker": "MongameSummer\\Tower.cs",
@@ -187,20 +191,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "defaultTower.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\defaultTower.cs",
               "RelativeDocumentMoniker": "MongameSummer\\defaultTower.cs",
-              "ToolTip": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\defaultTower.cs",
-              "RelativeToolTip": "MongameSummer\\defaultTower.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAfAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\defaultTower.cs*",
+              "RelativeToolTip": "MongameSummer\\defaultTower.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T15:37:37.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "TowerGrid.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\TowerGrid.cs",
               "RelativeDocumentMoniker": "MongameSummer\\TowerGrid.cs",
@@ -219,14 +223,27 @@
               "RelativeDocumentMoniker": "MongameSummer\\Game1.cs",
               "ToolTip": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\Game1.cs",
               "RelativeToolTip": "MongameSummer\\Game1.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwB8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAA9wDkAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T15:32:30.952Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
+              "Title": "TowerSelectionBar.cs",
+              "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\TowerSelectionBar.cs",
+              "RelativeDocumentMoniker": "MongameSummer\\TowerSelectionBar.cs",
+              "ToolTip": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\TowerSelectionBar.cs",
+              "RelativeToolTip": "MongameSummer\\TowerSelectionBar.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwOwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T21:24:39.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "EnemySpawner.cs",
               "DocumentMoniker": "C:\\Users\\Wraith\\source\\repos\\PvZ\\MongameSummer\\EnemySpawner.cs",
               "RelativeDocumentMoniker": "MongameSummer\\EnemySpawner.cs",
