@@ -16,6 +16,7 @@ namespace MongameSummer
         public GoldRigTower() : base("goldTower", 50)
         {
             health = 200;
+            PreviewSpriteName = "goldTowerPreview";
         }
 
         public override void Update(GameTime gameTime)

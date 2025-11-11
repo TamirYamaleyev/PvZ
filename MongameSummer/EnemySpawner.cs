@@ -9,7 +9,7 @@ namespace MongameSummer
         private Random random = new Random();
 
         private float spawnTimer = 0f;
-        private float spawnIntervalSeconds = 2f; // spawn every 2 seconds
+        private float spawnIntervalSeconds = 4f;
         private int xSpawnOffset = 900;
 
         public EnemySpawner(TowerGrid grid)

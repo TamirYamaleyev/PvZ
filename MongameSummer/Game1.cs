@@ -53,9 +53,12 @@ public class Game1 : Game
         SpriteManager.AddSprite("pixel", "Images/pixel");
         SpriteManager.AddSprite("defaultTower", "Images/Towers/Tower", 6, 1);
         SpriteManager.AddSprite("defaultTowerPreview", "Images/Towers/TowerThumbnail");
+        SpriteManager.AddSprite("goldTowerPreview", "Images/Towers/GoldTowerThumbnail");
+        SpriteManager.AddSprite("bomberTowerPreview", "Images/Towers/BomberTowerThumbnail");
         SpriteManager.AddSprite("bull", "Images/pacman");
         SpriteManager.AddSprite("goldCoin", "Images/pacman");
-        SpriteManager.AddSprite("goldTower", "Images/pong-atlas");
+        SpriteManager.AddSprite("goldTower", "Images/Towers/GoldTower", 4, 1);
+        SpriteManager.AddSprite("bomberTower", "Images/Towers/BomberTower", 6, 1);
         SpriteManager.AddSprite("goblinEnemy", "Images/Enemies/Goblin", 6, 1);
         SpriteManager.AddSprite("slimeEnemy", "Images/Enemies/Slime", 6, 1);
         SpriteManager.AddSprite("houndEnemy", "Images/Enemies/Hound", 6, 1);
