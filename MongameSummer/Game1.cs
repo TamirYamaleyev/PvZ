@@ -53,9 +53,11 @@ public class Game1 : Game
         SpriteManager.AddSprite("pixel", "Images/pixel");
         SpriteManager.AddSprite("defaultTower", "Images/pacman");
         SpriteManager.AddSprite("bull", "Images/pacman");
-        SpriteManager.AddSprite("zombie", "Images/Birds/Bird3_Egret4", 4, 4);
         SpriteManager.AddSprite("goldCoin", "Images/pacman");
         SpriteManager.AddSprite("goldTower", "Images/pong-atlas");
+        SpriteManager.AddSprite("goblinEnemy", "Images/Enemies/Goblin", 6, 1);
+        SpriteManager.AddSprite("slimeEnemy", "Images/Enemies/Slime", 6, 1);
+        SpriteManager.AddSprite("houndEnemy", "Images/Enemies/Hound", 6, 1);
 
         oswaldFont = Content.Load<SpriteFont>("Fonts/Oswald");
 

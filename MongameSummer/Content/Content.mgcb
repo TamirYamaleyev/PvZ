@@ -116,6 +116,42 @@
 /processorParam:TextureFormat=Color
 /build:Images/Birds/Bird3_Egret4.png
 
+#begin Images/Enemies/Goblin.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/Enemies/Goblin.png;Images/Enemies/Goblin
+
+#begin Images/Enemies/Hound.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/Enemies/Hound.png;Images/Enemies/Hound
+
+#begin Images/Enemies/Slime.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/Enemies/Slime.png;Images/Enemies/Slime
+
 #begin Images/logo.png
 /importer:TextureImporter
 /processor:TextureProcessor

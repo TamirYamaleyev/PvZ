@@ -12,7 +12,7 @@ public class GridScene : IDrawable
     private float goldGenInterval = 8f;
     private int goldPerInterval = 25;
 
-    private EnemySpawner spawner;
+    private EnemySpawner enemySpawner;
 
     private TowerSelectionBar selectionBar;
 
@@ -42,10 +42,10 @@ public class GridScene : IDrawable
         selectionBar = new TowerSelectionBar(new List<string> { "goldTower", "defaultTower", "defaultTower" }, Game1.oswaldFont);
         SceneManager.Add(selectionBar);
 
-        spawner = new EnemySpawner(grid);
-        SceneManager.Add(spawner);
+        enemySpawner = new EnemySpawner(grid);
+        SceneManager.Add(enemySpawner);
 
-        var goldGen = new GoldGenerator(Game1.player, goldGenInterval, goldPerInterval);
+        var goldGen = new GoldGenerator(Game1.player ,goldGenInterval, goldPerInterval);
         SceneManager.Add(goldGen);
 }
 

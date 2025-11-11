@@ -7,21 +7,21 @@ public class Enemy : Animation
 {
     public Collider collider;
 
-    public float speed = 50f;
-    public int health = 100;
-    public int attackPower = 10;
+    protected float speed = 50f;
+    protected int health = 100;
+    protected int attackPower = 10;
 
-    private float attackCooldown = 1f;
+    protected float attackCooldown = 3f;
     private float attackTimer = 0f;
 
     public int GoldOnDeath { get; set; } = 10;
 
     public int Lane;
 
-    public Enemy() : base("zombie")
+    public Enemy(string spriteName) : base(spriteName)
     {
         Play(true, 12);
-        scale = new Vector2(0.1f, 0.1f);
+        scale = new Vector2(3f, 3f);
 
         collider = SceneManager.Create<Collider>();
         collider.isTrigger = true;

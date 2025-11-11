@@ -1,22 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MongameSummer
 {
     internal class EnemySpawner : IUpdateable
     {
         private TowerGrid grid;
-
-        int xSpawnOffset = 900;
-        int laneCount = 5;
+        private Random random = new Random();
 
         private float spawnTimer = 0f;
-        private float spawnIntervalSeconds = 2f;
-        private Random random = new Random();
+        private float spawnIntervalSeconds = 2f; // spawn every 2 seconds
+        private int xSpawnOffset = 900;
 
         public EnemySpawner(TowerGrid grid)
         {
@@ -31,19 +25,28 @@ namespace MongameSummer
             if (spawnTimer >= spawnIntervalSeconds)
             {
                 spawnTimer = 0f;
-                SpawnEnemy();
+                SpawnRandomEnemy();
             }
         }
 
-        private void SpawnEnemy()
+        private void SpawnRandomEnemy()
         {
-            int lane = random.Next(0, laneCount);
+            int lane = random.Next(0, grid.Rows); // pick random lane
 
-            var enemy = SceneManager.Create<Enemy>();
+            // Randomly pick Goblin, Zombie, or Hound
+            Enemy enemy;
+            double choice = random.NextDouble();
+            if (choice < 0.33)
+                enemy = EnemyFactory.Create("goblinEnemy");
+            else if (choice < 0.66)
+                enemy = EnemyFactory.Create("zombieEnemy");
+            else
+                enemy = EnemyFactory.Create("houndEnemy");
+
             enemy.Lane = lane;
-
-            // Adjust Y to lock onto a lane(Row)
             enemy.position = new Vector2(Game1.ScreenCenterWidth + xSpawnOffset, grid[lane, 0].Bounds.Center.Y);
+
+            SceneManager.Add(enemy);
         }
     }
 }
