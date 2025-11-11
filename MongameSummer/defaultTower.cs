@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,8 +26,9 @@ namespace MongameSummer
         {
             Vector2 spawnPos = new Vector2(DestRectangle.Right, DestRectangle.Center.Y);
 
-            var bullet = new Bullet("bull", spawnPos, Vector2.UnitX);
+            var bullet = new Bullet("arrow", spawnPos, Vector2.UnitX);
             bullet.damage = bulletDamage;
+            bullet.effects = SpriteEffects.FlipHorizontally;
             SceneManager.Add(bullet);
         }
     }

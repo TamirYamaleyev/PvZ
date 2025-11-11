@@ -27,6 +27,18 @@
 /processorParam:TextureFormat=Compressed
 /build:Fonts/Oswald.spritefont
 
+#begin Images/Arrow.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/Arrow.png
+
 #begin Images/Birds/B4_s3.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -195,6 +207,18 @@
 /processorParam:TextureFormat=Color
 /build:Images/Enemies/Slime.png;Images/Enemies/Slime
 
+#begin Images/gold.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/gold.png
+
 #begin Images/logo.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -242,6 +266,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Images/pong-atlas.png
+
+#begin Images/smallArrow.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/smallArrow.png
 
 #begin Images/Towers/BomberTower.png
 /importer:TextureImporter

@@ -60,8 +60,8 @@ public class Game1 : Game
         SpriteManager.AddSprite("bombConsumablePreview", "Images/Consumables/BombConsumablePreview");
         SpriteManager.AddSprite("bombConsumable", "Images/Consumables/BombConsumable", 3, 1);
         SpriteManager.AddSprite("bombExplosion", "Images/Consumables/Explosion", 6, 1);
-        SpriteManager.AddSprite("bull", "Images/pacman");
-        SpriteManager.AddSprite("goldCoin", "Images/pacman");
+        SpriteManager.AddSprite("arrow", "Images/Arrow");
+        SpriteManager.AddSprite("goldCoin", "Images/gold");
         SpriteManager.AddSprite("goldTower", "Images/Towers/GoldTower", 4, 1);
         SpriteManager.AddSprite("goblinEnemy", "Images/Enemies/Goblin", 6, 1);
         SpriteManager.AddSprite("slimeEnemy", "Images/Enemies/Slime", 6, 1);
