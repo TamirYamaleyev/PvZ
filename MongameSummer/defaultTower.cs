@@ -12,6 +12,7 @@ namespace MongameSummer
         public defaultTower() : base("defaultTower", 100)
         {
             shootCooldown = 2f;
+            PreviewSpriteName = "defaultTowerPreview";
         }
 
         public override void Update(GameTime gameTime)

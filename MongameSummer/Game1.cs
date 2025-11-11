@@ -51,7 +51,8 @@ public class Game1 : Game
         _spriteManager = new SpriteManager(Content);
         
         SpriteManager.AddSprite("pixel", "Images/pixel");
-        SpriteManager.AddSprite("defaultTower", "Images/pacman");
+        SpriteManager.AddSprite("defaultTower", "Images/Towers/Tower", 6, 1);
+        SpriteManager.AddSprite("defaultTowerPreview", "Images/Towers/TowerThumbnail");
         SpriteManager.AddSprite("bull", "Images/pacman");
         SpriteManager.AddSprite("goldCoin", "Images/pacman");
         SpriteManager.AddSprite("goldTower", "Images/pong-atlas");

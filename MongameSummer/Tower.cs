@@ -15,13 +15,15 @@ public class Tower : Animation
     protected float shootTimer = 0f;
     protected float rangeInPixels = 1000f;
 
+    public string PreviewSpriteName { get; set; }
+
     public Tile Tile { get; set; }
 
     public Tower(string spriteName, int cost) : base(spriteName)
     {
         Play(true, 12);
 
-        scale = new Vector2(0.25f, 0.25f);
+        scale = new Vector2(1f, 1f);
 
         collider = SceneManager.Create<Collider>();
         collider.isTrigger = false;
