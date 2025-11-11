@@ -27,7 +27,7 @@ namespace MongameSummer
 
         public int topPadding = 8;
         public int backgroundPadding = 10;
-        public Color BackgroundColor { get; set; } = new Color(139, 69, 19); // Brown
+        public Color BackgroundColor { get; set; } = new Color(102, 66, 40);
 
         public TowerSelectionBar(List<string> towerNames, SpriteFont font)
         {

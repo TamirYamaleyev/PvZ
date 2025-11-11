@@ -45,6 +45,8 @@ public class Enemy : Animation
         if (position.X + DestRectangle.Width < 0 || position.X > Game1.ScreenWidth ||
             position.Y + DestRectangle.Height < 0 || position.Y > Game1.ScreenHeight)
         {
+            Game1.IsGameOver = true;
+
             SceneManager.Remove(this);
         }
     }

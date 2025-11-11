@@ -19,6 +19,9 @@ public class Game1 : Game
 
     public static Player player;
 
+    public static bool IsGameOver = false;
+    string gameOverText = "GAME OVER";
+
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
@@ -86,8 +89,8 @@ public class Game1 : Game
 
         // TODO: Add your update logic here
 
-
-        SceneManager.Instance.Update(gameTime);
+        if (!IsGameOver)
+            SceneManager.Instance.Update(gameTime);
 
         
         base.Update(gameTime);
@@ -95,27 +98,20 @@ public class Game1 : Game
 
     protected override void Draw(GameTime gameTime)
     {
-        GraphicsDevice.Clear(Color.DarkRed);
+        GraphicsDevice.Clear(new Color(30, 94, 10));
 
         // TODO: Add your drawing code here
         _spriteBatch.Begin();
         
-       
         SceneManager.Instance.Draw(_spriteBatch);
-        
 
-        //string text = "Hello Monogame!";
-        //_spriteBatch.DrawString(
-        //    oswaldFont,
-        //    text,
-        //    new Vector2(ScreenCenterWidth, 50.0f),
-        //    Color.White,
-        //    MathHelper.ToRadians(0.0f),
-        //    new Vector2(oswaldFont.MeasureString(text).X * 0.5f, oswaldFont.MeasureString(text).Y * 0.5f),
-        //    1.0f,
-        //    SpriteEffects.None,
-        //    0
-        //    );
+        if (IsGameOver)
+        {
+            Vector2 size = oswaldFont.MeasureString(gameOverText);
+            Vector2 pos = new Vector2(ScreenCenterWidth - size.X * 0.5f, ScreenCenterHeight - size.Y * 0.5f);
+
+            _spriteBatch.DrawString(oswaldFont, gameOverText, pos, Color.White);
+        }
         
         _spriteBatch.End();
         base.Draw(gameTime);
