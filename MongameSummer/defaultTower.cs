@@ -12,6 +12,7 @@ namespace MongameSummer
         public defaultTower() : base("defaultTower", 100)
         {
             shootCooldown = 2f;
+            bulletDamage = 25;
             PreviewSpriteName = "defaultTowerPreview";
         }
 

@@ -39,7 +39,7 @@ public class GridScene : IDrawable
             start: new Vector2(gLeftMargin, Game1.ScreenCenterHeight - (gRows * gTileHeight) * 0.5f)
         );
 
-        selectionBar = new TowerSelectionBar(new List<string> { "goldTower", "defaultTower", "defaultTower" }, Game1.oswaldFont);
+        selectionBar = new TowerSelectionBar(new List<string> { "goldTower", "defaultTower", "bombConsumable" }, Game1.oswaldFont);
         SceneManager.Add(selectionBar);
 
         enemySpawner = new EnemySpawner(grid);
@@ -49,7 +49,7 @@ public class GridScene : IDrawable
         SceneManager.Add(goldGen);
 }
 
-public void Update(GameTime gameTime)
+    public void Update(GameTime gameTime)
     {
         var mouse = Mouse.GetState();
         Vector2 mousePos = new Vector2(mouse.X, mouse.Y);

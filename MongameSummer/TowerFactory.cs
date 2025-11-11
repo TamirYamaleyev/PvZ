@@ -14,7 +14,7 @@ namespace MongameSummer
             {
                 "defaultTower" => new defaultTower(),
                 "goldTower" => new GoldRigTower(),
-                //"sniperTower" => new defaultTower(),
+                "bombConsumable" => new BombConsumable(),
                 _ => null
             };
         }

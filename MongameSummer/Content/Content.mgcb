@@ -123,6 +123,42 @@
 /processorParam:TextureFormat=Color
 /build:Images/Birds/Bird3_Egret4.png
 
+#begin Images/Consumables/BombConsumable.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/Consumables/BombConsumable.png;Images/Consumables/BombConsumable
+
+#begin Images/Consumables/BombConsumablePreview.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/Consumables/BombConsumablePreview.png;Images/Consumables/BombConsumablePreview
+
+#begin Images/Consumables/Explosion.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Images/Consumables/Explosion.png;Images/Consumables/Explosion
+
 #begin Images/Enemies/Goblin.png
 /importer:TextureImporter
 /processor:TextureProcessor

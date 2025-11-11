@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace MongameSummer;
 
@@ -101,5 +102,27 @@ public class Animation : Sprite
                 
         Rectangle nonNullRect = sourceRectangle ?? new Rectangle(0, 0, 0, 0);
         DestRectangle = GetDestRectangle(nonNullRect);
-    } 
+    }
+
+    public void ChangeAnimation(Spritesheet newSpriteSheet, bool playImmediately = true, bool loop = false, int fps = 12)
+    {
+        if (newSpriteSheet == null)
+            return;
+
+        _spritesheet = newSpriteSheet;
+
+        _texture = _spritesheet.texture;
+
+        x = 0;
+        y = 0;
+        frameCounter = 0;
+
+        sourceRectangle = _spritesheet[x, y];
+
+        _origin = new Vector2(sourceRectangle.Value.Width * 0.5f, sourceRectangle.Value.Height * 0.5f);
+
+        isLooping = false;
+        this.fps = fps;
+        isAnimating = playImmediately;
+    }
 }

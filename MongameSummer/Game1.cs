@@ -32,7 +32,7 @@ public class Game1 : Game
     protected override void Initialize()
     {
         // TODO: Add your initialization logic here
-        player = new Player(100);
+        player = new Player(150);
 
         ScreenCenterWidth = GraphicsDevice.Viewport.Width * 0.5f;
         ScreenCenterHeight = GraphicsDevice.Viewport.Height * 0.5f;
@@ -54,11 +54,12 @@ public class Game1 : Game
         SpriteManager.AddSprite("defaultTower", "Images/Towers/Tower", 6, 1);
         SpriteManager.AddSprite("defaultTowerPreview", "Images/Towers/TowerThumbnail");
         SpriteManager.AddSprite("goldTowerPreview", "Images/Towers/GoldTowerThumbnail");
-        SpriteManager.AddSprite("bomberTowerPreview", "Images/Towers/BomberTowerThumbnail");
+        SpriteManager.AddSprite("bombConsumablePreview", "Images/Consumables/BombConsumablePreview");
+        SpriteManager.AddSprite("bombConsumable", "Images/Consumables/BombConsumable", 3, 1);
+        SpriteManager.AddSprite("bombExplosion", "Images/Consumables/Explosion", 6, 1);
         SpriteManager.AddSprite("bull", "Images/pacman");
         SpriteManager.AddSprite("goldCoin", "Images/pacman");
         SpriteManager.AddSprite("goldTower", "Images/Towers/GoldTower", 4, 1);
-        SpriteManager.AddSprite("bomberTower", "Images/Towers/BomberTower", 6, 1);
         SpriteManager.AddSprite("goblinEnemy", "Images/Enemies/Goblin", 6, 1);
         SpriteManager.AddSprite("slimeEnemy", "Images/Enemies/Slime", 6, 1);
         SpriteManager.AddSprite("houndEnemy", "Images/Enemies/Hound", 6, 1);
