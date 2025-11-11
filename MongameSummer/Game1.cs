@@ -52,6 +52,7 @@ public class Game1 : Game
 
     public static SoundEffect EnemyDeathSound;
     public static SoundEffect ArrowHitSound;
+    public static SoundEffect TowerBuildSound;
     
     protected override void LoadContent()
     {
@@ -76,6 +77,7 @@ public class Game1 : Game
 
         EnemyDeathSound = Content.Load<SoundEffect>("Audio/EnemyDeath");
         ArrowHitSound = Content.Load<SoundEffect>("Audio/ArrowHit");
+        TowerBuildSound = Content.Load<SoundEffect>("Audio/TowerBuild");
 
 
         var gridScene = SceneManager.Create<GridScene>();

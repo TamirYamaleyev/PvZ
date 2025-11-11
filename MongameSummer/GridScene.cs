@@ -78,6 +78,7 @@ public class GridScene : IDrawable
                     {
                         tower.position = tile.Bounds.Center.ToVector2();
                         tile.PlaceTower(tower);
+                        Game1.TowerBuildSound.Play();
                         SceneManager.Add(tower);
                     }
                 }

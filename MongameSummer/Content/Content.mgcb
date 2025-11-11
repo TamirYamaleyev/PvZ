@@ -25,6 +25,12 @@
 /processorParam:Quality=Best
 /build:Audio/EnemyDeath.wav
 
+#begin Audio/TowerBuild.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Audio/TowerBuild.wav
+
 #begin Fonts/Oswald.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
