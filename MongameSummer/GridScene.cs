@@ -35,7 +35,7 @@ public class GridScene : IDrawable
             start: new Vector2(gLeftMargin, Game1.ScreenCenterHeight - (gRows * gTileHeight) * 0.5f)
         );
 
-        selectionBar = new TowerSelectionBar(new List<string> { "defaultTower", "defaultTower", "defaultTower" });
+        selectionBar = new TowerSelectionBar(new List<string> { "defaultTower", "defaultTower", "defaultTower" }, Game1.oswaldFont);
         SceneManager.Add(selectionBar);
 
         spawner = new EnemySpawner(grid);
@@ -62,9 +62,9 @@ public class GridScene : IDrawable
     {
         if (grid.TryGetTileAt(mousePos, out Tile tile) && tile.IsEmpty)
         {
-            if (!string.IsNullOrEmpty(selectionBar.SelectedTower))
+            if (selectionBar.SelectedTower != null)
             {
-                var tower = TowerFactory.CreateTower(selectionBar.SelectedTower);
+                var tower = TowerFactory.CreateTower(selectionBar.SelectedTower.SpriteName);
                 if (tower != null)
                 {
                     tower.position = tile.Bounds.Center.ToVector2();

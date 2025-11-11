@@ -40,7 +40,7 @@ public class Game1 : Game
         base.Initialize();
     }
 
-    private SpriteFont oswaldFont;
+    public static SpriteFont oswaldFont;
     
     public static float ScreenCenterWidth;
     public static float ScreenCenterHeight;
@@ -49,38 +49,23 @@ public class Game1 : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
         _spriteManager = new SpriteManager(Content);
-
         
-        
-        //SpriteManager.AddSprite("player", "Images/pacman");
         SpriteManager.AddSprite("pixel", "Images/pixel");
         SpriteManager.AddSprite("defaultTower", "Images/pacman");
         SpriteManager.AddSprite("bull", "Images/pacman");
         SpriteManager.AddSprite("zombie", "Images/Birds/Bird3_Egret4", 4, 4);
+        SpriteManager.AddSprite("goldCoin", "Images/pacman");
+
+        oswaldFont = Content.Load<SpriteFont>("Fonts/Oswald");
+
 
         var gridScene = SceneManager.Create<GridScene>();
 
         //SpriteManager.AddSprite("egret", "Images/Birds/Bird3_Egret4", 4, 4);
         //SpriteManager.AddSprite("duck", "Images/Birds/Bird2 Duck_1", 4, 4);
 
-        //pacman = SceneManager.Create<Player>();
-        //pacman.Play();
-
-        //enemy = SceneManager.Create<Enemy>();
-        //enemy.Play();
-
-        //enemy.position = new Vector2(Game1.ScreenCenterWidth + 300, Game1.ScreenCenterHeight + 300);
-        //enemy.scale = new Vector2(0.2f, 0.2f);
-
-        //enemy.LinkWithPlayer(pacman);
-
         Content.Load<Texture2D>("Images/logo");
         Content.Load<Texture2D>("Images/pong-atlas");
-
-        //pacman.position = new Vector2(Game1.ScreenCenterWidth, Game1.ScreenCenterHeight);
-        //pacman.scale = new Vector2(0.2f, 0.2f);
-        
-        oswaldFont = Content.Load<SpriteFont>("Fonts/Oswald");
         
         // TODO: use this.Content to load your game content here
     }

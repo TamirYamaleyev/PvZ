@@ -7,6 +7,8 @@ public class Tower : Animation
 {
     public Collider collider;
 
+    public int Cost { get; private set; }
+    public string SpriteName { get; private set; }
     protected int health = 100;
     protected int bulletDamage = 25;
     protected float shootCooldown = 1f;
@@ -15,7 +17,7 @@ public class Tower : Animation
 
     public Tile Tile { get; set; }
 
-    public Tower(string spriteName) : base(spriteName)
+    public Tower(string spriteName, int cost) : base(spriteName)
     {
         Play(true, 12);
 
@@ -23,6 +25,8 @@ public class Tower : Animation
 
         collider = SceneManager.Create<Collider>();
         collider.isTrigger = false;
+        Cost = cost;
+        SpriteName = spriteName;
     }
 
     public override void Update(GameTime gameTime)
