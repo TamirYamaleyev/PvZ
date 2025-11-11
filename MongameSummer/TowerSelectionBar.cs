@@ -152,7 +152,7 @@ namespace MongameSummer
                 costCell.X + costCell.Width * 0.5f - textSize.X * 0.5f * scale,
                 costCell.Y + costCell.Height * 0.5f - textSize.Y * 0.5f * scale
             );
-            spriteBatch.DrawString(font, costText, textPos, Color.Gold, 0f, Vector2.Zero, scale, SpriteEffects.None, 0f);
+            spriteBatch.DrawString(font, costText, textPos, Color.Black, 0f, Vector2.Zero, scale, SpriteEffects.None, 0f);
         }
 
         private void DrawBackground(SpriteBatch spriteBatch)
@@ -208,7 +208,7 @@ namespace MongameSummer
             // Draw the coin higher in its cell
             var coinSprite = SpriteManager.GetSprite("goldCoin");
             int coinPadding = (int)(goldCellSize * 0.1f);
-            int coinOffsetUp = 8; // shift coin upward
+            int coinOffsetUp = 4; // shift coin upward
             Rectangle coinRect = new Rectangle(
                 goldCell.X + coinPadding,
                 goldCell.Y + coinPadding - coinOffsetUp,

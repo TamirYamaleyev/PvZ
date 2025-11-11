@@ -9,7 +9,7 @@ namespace MongameSummer
 {
     internal class defaultTower : Tower
     {
-        public defaultTower() : base("defaultTower", 10)
+        public defaultTower() : base("defaultTower", 50)
         {
             shootCooldown = 2f;
         }

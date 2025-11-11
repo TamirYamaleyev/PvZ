@@ -67,9 +67,12 @@ public class GridScene : IDrawable
                 var tower = TowerFactory.CreateTower(selectionBar.SelectedTower.SpriteName);
                 if (tower != null)
                 {
-                    tower.position = tile.Bounds.Center.ToVector2();
-                    tile.PlaceTower(tower);
-                    SceneManager.Add(tower);
+                    if (Game1.player.SpendGold(tower.Cost))
+                    {
+                        tower.position = tile.Bounds.Center.ToVector2();
+                        tile.PlaceTower(tower);
+                        SceneManager.Add(tower);
+                    }
                 }
             }
         }

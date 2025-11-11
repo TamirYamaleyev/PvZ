@@ -32,7 +32,7 @@ public class Game1 : Game
     protected override void Initialize()
     {
         // TODO: Add your initialization logic here
-        player = new Player(500);
+        player = new Player(100);
 
         ScreenCenterWidth = GraphicsDevice.Viewport.Width * 0.5f;
         ScreenCenterHeight = GraphicsDevice.Viewport.Height * 0.5f;
